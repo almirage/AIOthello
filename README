@@ -1,0 +1,21 @@
+■ AIOthello
+
+AI同士対戦させるゲームです。
+人間との対戦は今のところ出来ません。
+
+Eclipseでマウントして使ってください。
+JDK1．6以上
+ソース文字コードはUTF-8
+
+jp.hutcraft.otl.OthelloMain がメインクラスです。Java Applicationとして実行できます。
+
+■ AIを作って対戦しよう！
+jp.hutcraft.otl.ai.OthelloAI を実装してください。
+moveメソッドに盤の全体情報が渡ってくるので、次の1手を返却してください。
+boardインスタンスは正確にはイミュータブルじゃないけど、内容は変えられないようになっているし、
+たとえ内容を変えたとしても呼び元には影響は無いので安心して使ってください。
+
+	Decide move(Board board, Piece yourPiece);
+
+AIクラスを実装したら、src直下にある app.dicon を編集します。
+このファイルに先手、後手に使うクラスが書かれているので自分のクラスで変更しましょう。
